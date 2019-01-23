@@ -21,3 +21,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Added because it will cause problems when working in a team and across multiple branches
+main.css
+

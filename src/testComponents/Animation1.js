@@ -2,7 +2,7 @@ import React from 'react'
 
 function Animation1 () {
   return (
-    <div>
+    <div id='animation1'>
       <h1>Animation1</h1>
     </div>
   )
