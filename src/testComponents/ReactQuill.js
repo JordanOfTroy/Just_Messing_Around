@@ -18,11 +18,31 @@ class Quill extends Component {
     this.setState({ text: value })
   }
 
+  modules = {
+    toolbar: [
+      [{ 'header': [1, 2, false] }],
+      ['bold', 'italic', 'underline','strike', 'blockquote'],
+      [{'list': 'ordered'}, {'list': 'bullet'}, {'indent': '-1'}, {'indent': '+1'}, {'align': 'center'}, {'align': 'right'}, {'align': 'justify'},],
+      ['link', 'image'],
+      ['clean']
+    ],
+  }
+ 
+  formats = [
+    'header',
+    'bold', 'italic', 'underline', 'strike', 'blockquote',
+    'list', 'bullet', 'indent',
+    'align', 
+    'link', 'image'
+  ]
+
   render () {
     return (
       <div>
         <ReactQuill value={this.state.text}
                   onChange={this.handleChange}
+                  modules={this.modules}
+                  formats={this.formats}
                   theme = 'snow'
                   />
       </div>
