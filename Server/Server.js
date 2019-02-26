@@ -1,7 +1,6 @@
 require('dotenv').config()
 const express = require('express'),
       session = require('express-session'),
-      axios = require('axios'),
       massive = require('massive'),
       ctrl = require('./Controller'),
       checkUserSession = require('./CheckUserSession'),
@@ -31,6 +30,7 @@ app.use(express.static(`${__dirname}/../build`))
 // --- GET ---
 
 // --- POST ---
+app.post(`/api/formdata`, ctrl.formData)
 
 // --- PUT ---
 
