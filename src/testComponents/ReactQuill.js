@@ -20,7 +20,8 @@ class Quill extends Component {
 
   modules = {
     toolbar: [
-      [{ 'header': [1, 2, false] }],
+      [{ 'header': [1, 2, 3, false] }],
+      [{'font': ['serif', 'monospace', false]}],
       ['bold', 'italic', 'underline','strike', 'blockquote'],
       [{'list': 'ordered'}, {'list': 'bullet'}, {'indent': '-1'}, {'indent': '+1'}, {'align': 'center'}, {'align': 'right'}, {'align': 'justify'},],
       ['link', 'image'],
@@ -30,6 +31,7 @@ class Quill extends Component {
  
   formats = [
     'header',
+    'font',
     'bold', 'italic', 'underline', 'strike', 'blockquote',
     'list', 'bullet', 'indent',
     'align', 
