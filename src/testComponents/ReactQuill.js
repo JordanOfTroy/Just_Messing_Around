@@ -14,7 +14,7 @@ class Quill extends Component {
   }
 
   handleChange(value) {
-    // console.log(this.state.text)
+    console.log(this.state.text)
     this.setState({ text: value })
   }
 
@@ -40,7 +40,7 @@ class Quill extends Component {
 
   render () {
     return (
-      <div>
+      <div className='reactQuill'>
         <ReactQuill value={this.state.text}
                   onChange={this.handleChange}
                   modules={this.modules}

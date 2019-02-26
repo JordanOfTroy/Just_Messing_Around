@@ -14,6 +14,8 @@ class Header extends Component {
         <Link to='/'>Home</Link>
         <Link to='/animation1'>  Animation 1</Link>
         <Link to='/quill'>  React Quill</Link>
+       <Link to='/form-practice'>   Form Practice</Link>
+
       </div>
     )
   }
